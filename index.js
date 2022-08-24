@@ -12,3 +12,9 @@ document.getElementById("generate-password").onclick = function () {
     document.getElementById("password").value = password;
    }
 }
+
+document.getElementById("copy").onclick = function () {
+    var copyText = document.getElementById("password");
+    copyText.select();
+    document.execCommand("copy"); 
+}
